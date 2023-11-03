@@ -1,2 +1,11 @@
+function createIngredient(name, price) {
+var ingredient = {
+    name: name,
+    price: price
+}
 
-module.exports = {}
+}
+module.exports = {
+    createIngredient,
+   
+}

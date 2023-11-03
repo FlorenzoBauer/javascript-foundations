@@ -3,7 +3,7 @@ var { createIngredient, createTaco, addIngredientToTaco, calculatePrice } = requ
 
 describe('taco stand', function() {
   describe('createIngredient', function() {
-    it.skip('should take a name and price', function() {
+    it('should take a name and price', function() {
       var ingredient1 = createIngredient('chicken', 2.50)
       var ingredient2 = createIngredient('steak', 3.25)
 
@@ -13,7 +13,7 @@ describe('taco stand', function() {
       assert.equal(ingredient2.price, 3.25)
     })
 
-    it.skip('should return an ingredient with defaults if nothing is passed', function() {
+    it('should return an ingredient with defaults if nothing is passed', function() {
       var defaultIngredient = createIngredient()
 
       assert.equal(defaultIngredient.name, 'unknown')
@@ -22,17 +22,17 @@ describe('taco stand', function() {
   })
 
   describe('createTaco', function() {
-    it.skip('should have a name', function() {
+    it('should have a name', function() {
 
       assert.equal(createTaco('southwestern').name, 'southwestern')
     })
 
-    it.skip('should have a default name if none provided', function() {
+    it('should have a default name if none provided', function() {
 
       assert.equal(createTaco().name, 'custom')
     })
 
-    it.skip('should have no ingredients by default', function() {
+    it('should have no ingredients by default', function() {
 
       assert.deepEqual(createTaco('baja').ingredients, [])
     })
