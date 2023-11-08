@@ -14,7 +14,7 @@
 - [] 🛗 [Elevator](./elevator/)
 - [] 📚 [Library](./library)
 - [] 🌮 [Taco Stand](./tacoStand/)
-- [] 🧶 [Crafting](./crafting/)
+- [x] 🧶 [Crafting](./crafting/)
 - [] ✂️ [Barber Shop](./barber-shop/)
 - [] 🥗 [Meal Planning](./meal-planning/)
 - [] 🍜 [Restaurant](./restaurant/)

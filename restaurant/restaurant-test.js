@@ -57,7 +57,7 @@ describe('Order', function () {
     assert.equal(order.meals, meals);
   });
 
-  it.skip('should have no complete meals by default', function () {
+  it('should have no complete meals by default', function () {
     var meal1 = createMeal('Pico de Gallo Quesadillas', [], 3);
     var meal2 = createMeal('Sombra Shroom Griddled Tacos', ['crema'], 3);
     var meal3 = createMeal('The Situation Gordita', ["cilantro", "onion"], 3);
@@ -67,7 +67,7 @@ describe('Order', function () {
     assert.deepEqual(order.completedMeals, []);
   });
 
-  it.skip('should be able to cook meals', function () {
+  it('should be able to cook meals', function () {
     var meal1 = createMeal('Pico de Gallo Quesadillas', [], 3);
     var meal2 = createMeal('Sombra Shroom Griddled Tacos', ['crema'], 3);
     var meal3 = createMeal('The Situation Gordita', ['cilantro', 'onion'], 3);
@@ -84,7 +84,7 @@ describe('Order', function () {
     assert.deepEqual(updatedOrder2.completedMeals[1], 'Sombra Shroom Griddled Tacos');
   });
 
-  it.skip('should only cook meals for the correct table', function () {
+  it('should only cook meals for the correct table', function () {
     var meal1 = createMeal('Pico de Gallo Quesadillas', [], 3);
     var meal2 = createMeal('Sombra Shroom Griddled Tacos', ['crema'], 3);
     var meal3 = createMeal('The Situation Gordita', ['cilantro', 'onion'], 5);
@@ -95,7 +95,7 @@ describe('Order', function () {
     assert.deepEqual(updatedOrder3.completedMeals.length, 0);
   });
 
-  it.skip('should be able to list all orders', function () {
+  it('should be able to list all orders', function () {
     var meal1 = createMeal('Pico de Gallo Quesadillas', ['to go'], 3);
     var meal2 = createMeal('Sombra Shroom Griddled Tacos', ['crema on the side'], 3);
     var meal3 = createMeal('The Situation Gordita', ['add cilantro', 'no onion'], 3);
@@ -106,7 +106,7 @@ describe('Order', function () {
     assert.deepEqual(orderNames, ['Pico de Gallo Quesadillas', 'Sombra Shroom Griddled Tacos', 'The Situation Gordita']);
   });
 
-  it.skip('should be able to list all special requests', function () {
+  it('should be able to list all special requests', function () {
     var meal1 = createMeal('Pico de Gallo Quesadillas', ['to go'], 3);
     var meal2 = createMeal('Sombra Shroom Griddled Tacos', ['crema on the side'], 3);
     var meal3 = createMeal('The Situation Gordita', ['add cilantro', 'no onion'], 3);
