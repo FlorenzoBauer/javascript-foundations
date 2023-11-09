@@ -11,25 +11,29 @@ return `Welcome to ${airport.name}!`
 }
 
 function landPlanes(airport, landings){
-  var gates = airport.availableGates;
   airport.availableGates -= landings;
-  var newAirport = airport;
-  newAirport.message = "";
-  if(gates > landings){
-    console.log(2)
-    newAirport.message = `Success! Current availability is ${newAirport.availableGates}.`
+  if(airport.availableGates <= 0){
+    airport.availableGates = 0;
+    airport.message = `Oh no! Not enough gates available. Current overflow is 1.`
   }
-  else if (gates > landings){
-    console.log(3)
-    
-    newAirport.message = `Oh no! Not enough gates available. Current overflow is 1.`
+  else if(airport.availableGates >= 0){
+    airport.message = `Success! Current availability is ${airport.availableGates}.`
   }
-  return newAirport
+  return airport
 }
 
+function checkAirlineLocations(airports, airline){
+  var locations = []
+  for(var i = 0; i < airports.length; i++){
+    if(airports[i].airlines.includes(airline)){
+      locations.push(airports[i].name)
+    }
+  }
+  return locations
+}
 module.exports = { 
    createAirport, 
    welcomeGuests, 
    landPlanes, 
-  // checkAirlineLocations
-};
+   checkAirlineLocations
+}
