@@ -1,21 +1,19 @@
-
-5. Make sure you read each subdirectory's README carefully before starting to code!
-
-
+# Unit Testing
+- This is a bunch of tests given, we must go through each and make every test pass. 
 ### Test Suites
 - [x] 🧚 ‍[Mythical Creatures](./mythical-creatures)
-- [] ✈️ [Airport](./airport)
-- [] 🎧 [DJ](./dj)
+- [x] ✈️ [Airport](./airport)
+- [x] 🎧 [DJ](./dj)
 - [] 🍔 [Favorite Foods](./favorite-foods)
 - [] 🎮 [Video Games](./video-games/)
-- [] 🎂 [Birthdays](./birthdays)
-- [] 🗓 [Calendar](./calendar/)
+- [x] 🎂 [Birthdays](./birthdays)
+- [x] 🗓 [Calendar](./calendar/)
 - [] 💵 [Vending Machine](./vending-machine/)
 - [] 🛗 [Elevator](./elevator/)
 - [] 📚 [Library](./library)
 - [] 🌮 [Taco Stand](./tacoStand/)
 - [x] 🧶 [Crafting](./crafting/)
-- [] ✂️ [Barber Shop](./barber-shop/)
+- [x] ✂️ [Barber Shop](./barber-shop/)
 - [] 🥗 [Meal Planning](./meal-planning/)
 - [] 🍜 [Restaurant](./restaurant/)
 - [] 🧖‍♀️ [Spa](./spa/)
